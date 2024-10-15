@@ -22,12 +22,12 @@ public class RunnerApplication {
 		SpringApplication.run(RunnerApplication.class, args);
 	}
 
-	@Bean
-	CommandLineRunner runner() {
-		return args -> {
-			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 3, Location.OUTDOOR);
-			log.info("Run: " + run);
-		};
-	}
+//	@Bean
+//	CommandLineRunner runner() {
+//		return args -> {
+//			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 3, Location.OUTDOOR);
+//			log.info("Run: " + run);
+//		};
+//	}
 
 }

@@ -13,7 +13,8 @@ public record Run(
         LocalDateTime completedOn,
         @Positive
         Integer miles,
-        Location location) {
+        Location location
+) {
     // validate data
 //    public Run() {
 //        if (!completedOn.isAfter(startedOn)) {
